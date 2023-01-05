@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skyBlue {
+    background-color: #e4f5fd;
+}
+
+.lightYellow {
+    background-color: #fffaeb;
+}
+
+.plumPink {
+    background-color: #dfbdcb;
+}
+
+.skyBlueDarkBackground {
+    background-color: #0098da;
+}
+
+.lightYellowDarkBackground {
+    background-color: #ffcd3c;
+}
+
+.plumPinkDarkBackground {
+    background-color: #df1b6c;
+}
+
+.pageContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.controlsContainer {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleH1 {
+    font-size: 35px;
+}
+
+.selectColorButton {
+    width: 30px;
+    height: 30px;
+    border: 0 black solid;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.selectColorButtonContainer {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.selected {
+    border: 4px solid rgba(0, 0, 0, 0.304)
+}
+
+.secondTitle {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.description {
+    margin: 9px 0 7px 0;
+}
+
+.labelText {
+    font-size: 13px;
+}
+
+.imageUploadButton {
+    background-image: url('./assets/upload_icon.svg');
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+    background-origin: content-box;
+    margin-top: 11px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.uploadInput {
+    display: none;
+}
+
+#umbrellaImage {
+    width: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    position: absolute;
+    width: 5%;
+    top: 63%;
+    left: 47.5%;
+}
+
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    animation: rotating 3.5s linear infinite;
+}
+
+.loader {
+    width: 100px;
+}
+
+.displayNone {
+    display: none;
+}

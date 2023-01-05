@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!--page container-->
+    <div id="pageContainer" class="pageContainer">
+        <!--image container-->
+        <div id="imageContainer" class="imageContainer">
+            <!--append element based on loading status-->
+            <img src="./assets/skyBlue.png" id="umbrellaImage" alt="umbrellaImage" />
+            <!--img umbrella-->
+        </div>
+        <!--customisation controls contianer-->
+        <div class="controlsContainer">
+            <div>
+                <h1 class="titleH1">Custom umbrella</h1>
+                <!--append select color buttons-->
+                <div id="colorButtonsContainer" class="selectColorButtonContainer">
+                </div>
+                <h2 class="secondTitle">Customize your umbrella</h2>
+                <p class="description">upload a logo for an instant preview</p>
+                <div>
+                    <p class="labelText">.png and .jpg files only. Max size is 5MB.</p>
+                    <!--image upload button-->
+                    <div id="imageUploadButton" class="imageUploadButton skyBlueDarkBackground">
+                        <!--upload icon svg into object-->
+                        <label>
+                            UPLOAD LOGO
+                            <input class="uploadInput" type="file" onchange="handleUploadLogo(event)"
+                                accept="image/png,image/jpeg" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js" type="application/javascript"></script>
+</body>
+
+</html>
